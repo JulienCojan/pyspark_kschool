@@ -5,6 +5,7 @@
 ### Dependencias
 * java 8 (openjdk-8)
 * python 2.7+/3.4+ (usaremos python 3)
+* jupyter y pandas (```pip install jupyter pandas```)
 
 ### Instalación
 * Descargar spark (https://spark.apache.org/downloads.html), por ejemplo spark-2.4.6-bin-hadoop2.7.tgz
@@ -41,3 +42,9 @@ Or copy and paste one of these URLs:
   or http://127.0.0.1:8888/?token=[...]
 ```
 Basta con copiar y pegar una de estas url en un navegador para acceder a la interfaz de JupyterHub.
+
+
+## Referencias
+[Documentation oficial de Spark](http://spark.apache.org/docs/2.4.6/)
+
+http://bartek-blog.github.io/python/spark/jupyter/2019/03/27/how-to-install-pyspark.html
