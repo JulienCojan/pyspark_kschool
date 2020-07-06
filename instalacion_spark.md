@@ -11,13 +11,18 @@
 * Descargar spark (https://spark.apache.org/downloads.html), por ejemplo spark-2.4.6-bin-hadoop2.7.tgz
 * Unzip por ejemplo en '~/App'
 ```
-ln -s ~/App/spark-2.4.6-bin-hadoop2.7 ~/programs/spark
+$ ln -s ~/App/spark-2.4.6-bin-hadoop2.7 ~/programs/spark
+```
+* Añadir las lineas siguientes a ~/.bashrc o ~/.zshrc segun el shell utilizado.
+```
 SPARK_HOME="$HOME/App/spark"
 export PATH=$SPARK_HOME/bin:$PATH
+alias jupyspark='PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS=notebook pyspark'
 ```
-* ejecutar pyspark en un notebook jupyterhub
+Y reanudar el shell o ejecutar ```$ source ~/.bashrc```
+* Ejecutar pyspark en un notebook jupyterhub
 ```
-PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+$ jupyspark
 ```
 
 
